@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="participantes.component.css"/>
+       </head>
+
+<h1>Registro de Proyecto</h1>
+<body>
+
+
+<!--Categorias (Combo)-->
+<p>Tipo de proyecto:</p>
+<div class="form-group">
+<input type="text" name="NomTipo_Proyecto" [(ngModel)]="tipoProyecto.NomTipo_Proyecto" size= "40" class="form-control form-control-lg" placeholder="Social, Emprendimiento Tecnologico, Desarollo Sustentable o Innovación en productos y servicios"><br>
+</div>
+
+
+<p>Categoría a participar:</p>
+<div class="form-group">
+  <input type="text" name="NomCategoria_Participa" [(ngModel)]="categoriaParticipacion.NomCategoria_Participa" size= "40" class="form-control form-control-lg" placeholder="Cartel, Prototipo, Proyecto de Inversión o Proyecto de TI"><br>
+
+</div>
+
+  <!--Datos Representante-->
+  <h2>Datos Generales:</h2>
+<p>Nombre:</p>
+<div class="form-group">
+  <input type="text" name="Nombre_Representante" [(ngModel)]="registro_Participacion.Nombre_Representante" size= "40" class="form-control form-control-lg" placeholder=" Nombre completo"><br>
+</div>
+
+<p>Correo electrónico del representante:</p>
+<div class="form-group">
+<input type="text" name="Correo_Representante" [(ngModel)]="registro_Participacion.Correo_Representante" size= "40" class="form-control form-control-lg" placeholder="ejemplo@gmail.com"><br>
+</div>
+
+<div class="form-group">
+<p>Número de control del representante:</p>
+<input type="text" name="NoControl_Representante" [(ngModel)]="registro_Participacion.NoControl_Representante" size= "40" class="form-control form-control-lg" placeholder=""><br>
+</div>
+
+<div class="form-group">
+<p>Nombre del proyecto:</p>
+<input type="text" name="Nombre_Proyecto" [(ngModel)]="registro_Participacion.Nombre_Proyecto" size= "40" class="form-control form-control-lg" placeholder=""><br>
+</div>
+
+<div class="form-group">
+<p>Descripcion del proyecto:</p>
+<textarea class="form-control" name="Descripcion_Proyecto" [(ngModel)]="registro_Participacion.Descripcion_Proyecto" rows="5" id="comment"></textarea><br>
+</div>
+
+<div class="form-group">
+<p>Nombre del asesor:</p>
+<input type="text" name="Nombre_Asesor" [(ngModel)]="registro_Participacion.Nombre_Asesor" size= "40" class="form-control form-control-lg" placeholder="Nombre completo"><br>
+</div>
+
+<div class="form-group">
+<p>Resumen ejecutivo:</p>
+<textarea class="form-control" name="Resumen_Ejecutivo" [(ngModel)]="registro_Participacion.Resumen_Ejecutivo" rows="5" id="comment"></textarea><br>
+</div>
+
+<p>Referencia de video:</p>
+<div class="form-group">
+<input type="text" name="Referencia_Video" [(ngModel)]="registro_Participacion.Referencia_Video" size= "40" class="form-control form-control-lg" placeholder="Link del video"><br>
+</div>
+
+<p>Referencia de evidencias:</p>
+<div class="form-group">
+<input type="text" name="Referencia_Evidencias" [(ngModel)]="registro_Participacion.Referencia_Evidencias" size= "40" class="form-control form-control-lg" placeholder="Link de los archivos"><br>
+</div>
+
+
+<p>Carrera:</p>
+<div class="form-group">
+<input type="text" name="Nombre_Carrera" [(ngModel)]="carrera.Nombre_Carrera" size= "40" class="form-control form-control-lg" placeholder=""><br>
+</div>
+
+<p>Grupo:</p>
+<div class="form-group">
+<input type="text" name="Nombre_Grupo" [(ngModel)]="grupo.Nombre_Grupo" size= "40" class="form-control form-control-lg" placeholder=""><br>
+</div>
+
+
+
+  <!--Datos del equipo-->
+<h3>Datos del Equipo:</h3>
+<p class="nota">*Nota: Datos del equipo esceptuando al Representante y escribe los datos separados por comas y un enter de forma que coincidan</p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Nombres</th>
+      <th>Correos</th>
+      <th>Números de control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class="form-group">
+          <textarea class="form-control" name="Nombre_Integrante" [(ngModel)]="integrantesEquipo.Nombre_Integrante" rows="5" id="comment"  placeholder="Nombres de los integrantes"></textarea>
+        </div></td>
+
+        <td>
+          <div class="form-group">
+            <textarea class="form-control" name="Correo_Integrante" [(ngModel)]="integrantesEquipo.Correo_Integrante"  rows="5" id="comment" placeholder="Correos de los integrantes"></textarea>
+          </div></td>
+
+          <td>
+            <div class="form-group">
+              <textarea class="form-control"  name="NoControl_Integrante" [(ngModel)]="integrantesEquipo.NoControl_Integrante" rows="5" id="comment" placeholder="Numero de control de los integrantes"></textarea>
+            </div></td>
+      
+    </tr>
+  </tbody>
+</table>
+
+
+<p>Campus:</p>
+<div class="form-group">
+  <input type="text" name="Campus_Integrante" [(ngModel)]="integrantesEquipo.Campus_Integrante" size= "40" class="form-control form-control-lg" placeholder="Escribe: (1) para Dolores Hidalgo o (0) Victoría"><br>
+  </div>
+
+  <p>Programa Educativo:</p>
+<div class="form-group">
+  <input type="text" name="Programa_Educativo" [(ngModel)]="integrantesEquipo.Programa_Educativo" size= "40" class="form-control form-control-lg" placeholder="Escribe: (1) para escolarizado o (0) semiescolarizado"><br>
+  </div>
+  
+
+
+<p>Estatus</p>
+<input type="text" size= "40" class="form-control" placeholder="" readonly >
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<input [routerLink]="['/home']" type="submit" value= " Cancelar " class="button1" >
+
+<input name="Guardar" type="submit" value=" Guardar " class="button" (click)="edit ? updateAll() : saveAll()" onclick="alert('Datos Guardados')">
+
+</body>
+</html>

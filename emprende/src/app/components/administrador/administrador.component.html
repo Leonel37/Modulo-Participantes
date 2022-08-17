@@ -1,0 +1,105 @@
+
+    <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <br>
+            <h1 class="h3 mb-4 text-gray-800">Gestión de Eventos</h1>
+            <hr>
+            <div class="row" >
+                <div class="col-md-8">
+
+                </div>
+                <div class="col-md-4">
+
+               
+                    <div class="card shadow mb-4"  >
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Formulario</h6>
+                        </div>
+                       
+                        <div class="card-body"  class="form-horizontal">
+                       
+                            <div class="form-group" >
+                                <label>Nombre evento</label>
+                                <br>
+                                <input type="text" name="nombre">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Fecha</label>
+                                <br>
+                               <input type="date" name="fecha">
+                            </div> 
+                
+                            <div class="form-group">
+                                <label>Hora</label>
+                                <br>
+                                <input type="time" name="hora">
+                            </div>
+                       
+                            <div class="form-group">
+                                <label>Duración</label>
+                                <br>
+                                <input type="text" name="duracion">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Cantidad </label>
+                                <br>
+                                <input type="number" name="cantidad">
+                            </div>
+
+                            <div  class="form-group">
+                                <label>Lugar </label>
+                                <br>
+                                <input type="text" name="nombre" >
+                            </div>
+
+                            <div  class="form-group">
+                                <label>Tipo</label>
+                                <br>
+                             
+                                        <select name="menu">
+                                          <option>Conferencia</option>
+                                          <option>Foro</option>
+                                         <option>Taller</option>
+                                        </select> 
+                                
+                            </div>
+                            
+                            <div  class="form-group">
+                                
+                                <label>Responsable</label>
+                                <br>
+                                <input type="text" name="respon">
+                            </div>
+                             
+                            <div  class="form-group">
+                                <label>Participante</label>
+                                <br>
+                               <input type="text" name="partici">
+                            </div>
+
+                            <div  class="form-group">
+                                <label>Croquis</label>
+                                <br>
+                                <form name="subida-imagenes" type="POST" enctype="multipart/formdata" >
+                                   <input type="file" name="imagen" />
+                                </form>
+                            </div>
+                            <hr>
+                            <div class="form-group" align="right">
+                            <a  class="btn-lg" ><img src="./assets/pics/agregar.png"></a>
+                            <a  class="btn-lg" ><img src="./assets/pics/editar.png"></a>
+                            <a  class="btn-lg"><img src="./assets/pics/eliminar.png"></a>
+                            </div>
+                           
+                        
+                        </div> 
+                    </div>
+                </div>
+                
+             </div>
+        </div>
+
+   

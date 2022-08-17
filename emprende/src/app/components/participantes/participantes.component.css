@@ -1,0 +1,17 @@
+* {   
+    margin: 0px;   
+    padding: 0px; 
+}
+body {background-color:#F4F6F6 ;margin-right: 3px;}
+h1 {font: sans-serif; padding: 20px; font-weight: bold; font-family: Verdana;background-color: #225199; color :white; text-align:center;} 
+h2 {font: sans-serif; padding: 20px; font-weight: bold; font-family: Verdana;}
+h3 {font: sans-serif; padding: 20px; font-weight: bold; font-family: Verdana;}
+p {font: sans-serif; padding: 20px; font-weight: bold; font-family: Verdana;}
+p {display: inline-block;}
+input.button {margin: 20px 180px 20px 50px; background-color: rgb(20, 89, 192); display:inline-block; color:white; font-size: x-large;}
+input.button1 {margin: 20px 180px 20px 50px; background-color: rgb(80, 81, 82); display:inline-block; color:white; font-size: x-large;}
+input.button2 {margin: 20px 180px 20px 50px; background-color: rgb(58, 180, 21); display:inline-block; color:white; font-size: x-large;}
+input {font-size: 16px;}
+div select {font-size: 20px;}
+select.form-select {font-size: 16px;}
+p.nota {font-size: 12px;}
